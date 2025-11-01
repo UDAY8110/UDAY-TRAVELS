@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uday Tour & Travel</title>
+  <meta name="description" content="Uday Tour and Travel – Your Trusted Travel Partner Across India
+
+Welcome to Uday Tour and Travel, your reliable companion for safe, comfortable, and enjoyable journeys across India. We specialize in taxi services, outstation trips, airport transfers, and customized tour packages designed to match your travel style and budget. Whether it’s a short weekend getaway or a long vacation, we ensure every journey becomes a memorable experience.
+
+🕌 Explore Incredible India with Us
+
+Rajasthan – Discover the royal charm of Jaipur, Udaipur, Jaisalmer, and Jodhpur. Experience majestic forts, vibrant culture, and desert safaris.
+
+Madhya Pradesh – Explore the heart of India with historical wonders of Khajuraho, Sanchi, and wildlife adventures in Kanha and Bandhavgarh.
+
+Uttar Pradesh – Visit the spiritual land of Varanasi, the eternal beauty of the Taj Mahal in Agra, and cultural gems like Lucknow and Prayagraj.
+
+Bihar – Step into history with the ancient universities of Nalanda, the serenity of Bodh Gaya, and the cultural heritage of Patna.
+
+We cover all Indian states, offering personalized routes, experienced drivers, and clean, well-maintained vehicles for every trip." />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{--primary:#0d6efd;--dark:#042a4a;--muted:#6c757d}
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.45;color:#222;margin:0;background:#f6f8fb}
+
+    /* NAV */
+    .navbar{background:linear-gradient(90deg,var(--dark),#0b63a3)}
+    .navbar .navbar-brand{font-weight:700;color:#fff}
+    .navbar .nav-link{color:rgba(255,255,255,0.95)}
+
+    /* HERO VIDEO */
+    .hero-wrap{position:relative;height:78vh;min-height:480px;display:flex;align-items:center}
+    .hero-wrap video{position:absolute;top:50%;left:50%;width:auto;min-width:100%;min-height:100%;transform:translate(-50%,-50%);object-fit:cover;z-index:0}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,42,74,0.6),rgba(4,42,74,0.35));z-index:1}
+    .hero-content{position:relative;z-index:2;color:#fff;padding:3rem}
+    .hero-content h1{font-size:2.6rem;font-weight:700;margin-bottom:.5rem}
+    .hero-content p.lead{font-size:1.05rem;color:rgba(255,255,255,0.9)}
+
+    /* CARDS */
+    .card-shadow{box-shadow:0 10px 30px rgba(7,18,38,0.08);border:0;border-radius:12px}
+    .service-icon{width:64px;height:64px;border-radius:12px;background:#fff;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(13,110,253,0.06)}
+
+    /* PACKAGES */
+    .price-chip{background:rgba(13,110,253,0.12);color:var(--primary);padding:.35rem .6rem;border-radius:999px;font-weight:600}
+
+    /* GALLERY */
+    .gallery img{width:100%;height:200px;object-fit:cover;border-radius:10px}
+
+    /* CONTACT */
+    .floating-wa{position:fixed;right:18px;bottom:18px;z-index:1100}
+
+    footer{background:#021725;color:#fff;padding:1.1rem 0}
+
+    /* responsive tweaks */
+    @media(max-width:767px){.hero-content h1{font-size:1.8rem;padding:1rem 0}.hero-wrap{height:64vh}}
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Uday Tour & Travel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-sm btn-outline-light ms-lg-3" href="#contact">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO with video background -->
+  <header class="hero-wrap">
+    <!-- Put your hero video in the same folder and name it "hero.mp4" OR update the src below to your file path. -->
+    <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=60">
+      <source src="assets/hero.mp4" type="video/mp4">
+      <!-- fallback image will be used if video not available -->
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1>Uday Tour & Travel</h1>
+          <p class="lead">Trusted travel partner for comfortable taxis, outstation trips, airport transfers and carefully curated tour packages across India.</p>
+          <div class="mt-3">
+            <a href="https://wa.me/919891721141" target="_blank" class="btn btn-lg btn-success me-2">Book via WhatsApp</a>
+            <a href="#packages" class="btn btn-lg btn-outline-light">View Packages</a>
+          </div>
+          <div class="mt-3 small text-white-50">Need immediate help? Call <a href="tel:+919891721141" class="text-white text-decoration-underline">9891721141</a></div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="card card-shadow p-3">
+            <h6 class="mb-2">Popular Today</h6>
+            <p class="small text-muted mb-1">Golden Triangle • Manali • Jaipur • Goa</p>
+            <div class="d-flex gap-2 mt-3">
+              <img src="https://images.unsplash.com/photo-1505765058651-9f6dbd3b9a77?auto=format&fit=crop&w=600&q=60" alt="thumb" style="width:72px;height:72px;object-fit:cover;border-radius:10px">
+              <img src="https://images.unsplash.com/photo-1508193638391-6f3488873f5d?auto=format&fit=crop&w=600&q=60" alt="thumb" style="width:72px;height:72px;object-fit:cover;border-radius:10px">
+              <img src="https://images.unsplash.com/photo-1526779259212-5a2b4b7b3b9b?auto=format&fit=crop&w=600&q=60" alt="thumb" style="width:72px;height:72px;object-fit:cover;border-radius:10px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Our Services</h2>
+        <p class="text-muted">Professional and reliable travel services tailored to your needs.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card p-3 h-100 card-shadow">
+            <div class="service-icon mb-3"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 11h18M5 7h14" stroke="#0d6efd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h5>Taxi Booking</h5>
+            <p class="small text-muted">Local & outstation cabs with verified drivers.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 h-100 card-shadow">
+            <div class="service-icon mb-3"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 10h18v6H3zM5 16v2h14v-2" stroke="#0d6efd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h5>Tour Packages</h5>
+            <p class="small text-muted">Curated itineraries for families, couples & groups.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 h-100 card-shadow">
+            <div class="service-icon mb-3"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M2 12h20M12 2v20" stroke="#0d6efd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h5>Airport Transfers</h5>
+            <p class="small text-muted">Flight-tracking and on-time pickups.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 h-100 card-shadow">
+            <div class="service-icon mb-3"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 7h7l-5.6 4.1L20 22l-7-4-7 4 1.6-8.9L2 9h7z" stroke="#0d6efd" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h5>Group Travel</h5>
+            <p class="small text-muted">Tempo travellers & group packages for events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section id="packages" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Featured Packages</h2>
+        <p class="text-muted">Contact us for full itinerary, inclusions & booking.</p>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card card-shadow h-100">
+            <img src="Golden_Temple_Amritsar_Sri_Harmandir_Sahib_-_Sikh_Holiest_Shrine_441126cf-ecc9-437f-8281-0d2a6e27252a.jpg" class="card-img-top" alt="Golden Triangle">
+            <div class="card-body">
+              <h5 class="card-title">Golden Triangle — 3 Days</h5>
+              <p class="card-text small text-muted">Delhi • Agra • Jaipur — Historical highlights and comfortable stays.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-chip"></span>
+                <a href="https://wa.me/919891721141?text=Hello%20Uday%20Tour%20%26%20Travel%2C%20I%20want%20details%20about%20Golden%20Triangle%20package" target="_blank" class="btn btn-primary btn-sm">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-shadow h-100">
+            <img src="places-to-visit-in-Himachal-Pradesh.webp" class="card-img-top" alt="Himachal">
+            <div class="card-body">
+              <h5 class="card-title">Himachal Getaway — 5 Days</h5>
+              <p class="card-text small text-muted">Manali • Rohtang • Solang — Snow views & scenic drives.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-chip"></span>
+                <a href="https://wa.me/919891721141?text=Hello%20Uday%20Tour%20%26%20Travel%2C%20I%20want%20details%20about%20Himachal%20Getaway" target="_blank" class="btn btn-primary btn-sm">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-shadow h-100">
+            <img src="images.jpeg" class="card-img-top" alt="Rajasthan">
+            <div class="card-body">
+              <h5 class="card-title">Rajasthan Explorer — 4 Days</h5>
+              <p class="card-text small text-muted">Jaipur • Jodhpur • Udaipur — Forts, palaces and culture.</p>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <span class="price-chip"></span>
+                <a href="https://wa.me/919891721141?text=Hello%20Uday%20Tour%20%26%20Travel%2C%20I%20want%20details%20about%20Rajasthan%20Explorer" target="_blank" class="btn btn-primary btn-sm">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Gallery</h2>
+        <p class="text-muted">Moments from our trips — real customers, real smiles.</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-3"><img src="images (1).jpeg" class="gallery" alt=""></div>
+        <div class="col-6 col-md-3"><img src="images (2).jpeg" class="gallery" alt=""></div>
+        <div class="col-6 col-md-3"><img src="images (4).jpeg" class="gallery" alt=""></div>
+        <div class="col-6 col-md-3"><img src="images.jpeg" class="gallery" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">About Uday Tour & Travel</h2>
+          <p class="text-muted">Uday Tour and Travel – Your Trusted Travel Partner Across India
+
+Welcome to Uday Tour and Travel, your reliable companion for safe, comfortable, and enjoyable journeys across India. We specialize in taxi services, outstation trips, airport transfers, and customized tour packages designed to match your travel style and budget. Whether it’s a short weekend getaway or a long vacation, we ensure every journey becomes a memorable experience.
+
+🕌 Explore Incredible India with Us
+
+Rajasthan – Discover the royal charm of Jaipur, Udaipur, Jaisalmer, and Jodhpur. Experience majestic forts, vibrant culture, and desert safaris.
+
+Madhya Pradesh – Explore the heart of India with historical wonders of Khajuraho, Sanchi, and wildlife adventures in Kanha and Bandhavgarh.
+
+Uttar Pradesh – Visit the spiritual land of Varanasi, the eternal beauty of the Taj Mahal in Agra, and cultural gems like Lucknow and Prayagraj.
+
+Bihar – Step into history with the ancient universities of Nalanda, the serenity of Bodh Gaya, and the cultural heritage of Patna.
+
+We cover all Indian states, offering personalized routes, experienced drivers, and clean, well-maintained vehicles for every trip.</p>
+          <ul class="small text-muted">
+            <li>Verified drivers & clean vehicles</li>
+            <li>Transparent pricing — no hidden charges</li>
+            <li>Custom Tour Packages for Families, Groups, and Solo Travelers</li>
+            <li>24/7 customer support via phone & WhatsApp</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+            <iframe src="https://www.google.com/maps?q=India&output=embed" style="border:0;" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Get In Touch / Book</h2>
+        <p class="text-muted">Quick booking — takes just a minute.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card card-shadow p-4">
+            <form id="bookingForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full name</label>
+                  <input class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Phone</label>
+                  <input class="form-control" id="phone" value="+91 9891721141" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">From</label>
+                  <input class="form-control" id="from" placeholder="City / Station" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">To</label>
+                  <input class="form-control" id="to" placeholder="City / Destination" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Date</label>
+                  <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Passengers</label>
+                  <input type="number" class="form-control" id="pax" min="1" value="2" required>
+                </div>
+                <div class="col-12 d-flex gap-2 mt-2">
+                  <button type="submit" class="btn btn-primary">Send via WhatsApp</button>
+                  <button type="button" id="callBtn" class="btn btn-outline-primary">Call Now</button>
+                </div>
+                <div class="col-12"><small class="text-muted">We will contact you shortly to confirm the booking. For urgent help call <a href="tel:+919891721141">9891721141</a></small></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="call-action-btn">
+ <a href="tel:+91-9258066999"><i class="fa fa-phone"></i></a>
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <strong>Uday Tour & Travel</strong>
+        <div class="small text-white-50">Call/WhatsApp: <a class="text-white-50 text-decoration-underline" href="tel:+919891721141">9891721141</a></div>
+      </div>
+      <div class="small">© <span id="year"></span> Uday Tour & Travel — All rights reserved</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div class="floating-wa">
+    <a href="https://wa.me/919891721141" target="_blank" class="btn btn-success rounded-circle p-3 shadow" title="Chat on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24"><path d="M20.5 3.5A11.98 11.98 0 0 0 12 .5C6 0 .9 5.1.9 11.1c0 2 0.5 3.9 1.5 5.6L.3 23.3l6.9-1.9c1.6 0.9 3.4 1.3 5.3 1.3 6 0 11-4.9 11-11 0-3.1-1.2-6-3.3-8.2zM12 20.1c-1.7 0-3.4-0.4-4.9-1.2L5 19l1.3-2.9C5.8 15 5 13.1 5 11.1 5 7 8.9 3.9 12 3.9c3 0 5.8 2 6.4 5 0.6 3-1.2 6.1-4 7.5-0.9 0.5-1.8 0.7-2.4 0.7z"/></svg>
+    </a>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // booking form: prefill WhatsApp message
+    document.getElementById('bookingForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('name').value || '');
+      const phone = encodeURIComponent(document.getElementById('phone').value || '');
+      const from = encodeURIComponent(document.getElementById('from').value || '');
+      const to = encodeURIComponent(document.getElementById('to').value || '');
+      const date = encodeURIComponent(document.getElementById('date').value || '');
+      const pax = encodeURIComponent(document.getElementById('pax').value || '');
+      const text = `Hello Uday Tour & Travel, I would like to book a trip.\nName: ${name}\nPhone: ${phone}\nFrom: ${from}\nTo: ${to}\nDate: ${date}\nPassengers: ${pax}`;
+      const wa = `https://wa.me/919891721141?text=${text}`;
+      window.open(wa, '_blank');
+    });
+
+    // Call button
+    document.getElementById('callBtn').addEventListener('click', function(){
+      window.location.href = 'tel:+919891721141';
+    });
+  </script>
+</body>
+</html>
